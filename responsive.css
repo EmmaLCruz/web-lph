@@ -328,6 +328,36 @@
   } */
 
 
+  /* -- Vegetariana -- */
+  .widget__title::after {
+    left: 9rem;
+  }
+
+  .widget__subtitle {
+    font-size: 28px;
+  }
+
+  .widget__details-price {
+    width: 120px;
+    font-size: 48px;
+    margin-bottom: 0;
+  }
+
+  .widget__details-data {
+    font-size: 14px;
+  }
+
+  .btn--red{
+    font-size: 14px;
+    height: 40px;
+    width: 120px;
+    letter-spacing: 1px;
+  }
+
+  .widget__image img {
+    width: 120px;
+  }
+
   /* -- Footer -- */
   /* .footer {
     padding: 10px;
