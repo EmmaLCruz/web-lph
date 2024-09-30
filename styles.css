@@ -151,7 +151,7 @@
   background-color: var(--color-primary);
   height: 6.5rem;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   border-bottom: 1.5px solid #7e0301;
 }
@@ -160,18 +160,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 8rem;
+  gap: 10vw;
   color: var(--color-text-light);
   height: var(--content-height);
 }
 
 .main-nav__logo{
+  width: 150px;
   z-index: 10;
 }
 
-.main-nav__logo-fill{
-  width: 150px;
-}
+/* .main-nav__logo-fill{
+  width: 8vw;
+} */
 
 .main-nav__logo-img{
   position: absolute;
@@ -267,6 +268,7 @@
 }
 
 .main-nav__order-box{
+  width: max-content;
   display: flex;
   flex-direction: column;
 }
@@ -287,6 +289,10 @@
 
 .main-nav__order-box-link:hover {
   color: var(--color-secondary);
+}
+
+.main-nav__modal{
+  display: none;
 }
 
 /* Fin: Barra de navegación */
@@ -396,6 +402,7 @@
 }
 
 .hero__content-img{
+  margin: auto 0;
   animation: move-from-right 1.5s var(--transition-easing);
 }
 
@@ -417,7 +424,7 @@
 /* Inicio: Productos */
 
 .products{
-  height: 115vh;
+  height: fit-content;
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .1)), url("images/yellow.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -431,6 +438,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   opacity: 0;
   transform: scale(0);
   padding: 56px 0 48px 0;
@@ -471,12 +479,14 @@
 }
 
 .products__cards{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
 }
 
 .card{
+  min-width: 260px;
+  max-width: 320px;
   background-color: var(--color-bg);
   border-radius: var(--border-radius);
   padding: var(--spacing-md);
@@ -616,11 +626,11 @@
 
 /* Fin: Productos */
 
-/* Inicio: Opción Vegetariana */
+/* Inicio: Vegetariana */
 
 .vegetarian{
   width: var(--content-width);
-  height: 110vh;
+  height: fit-content;
   background-image: url("images/hand-drawn-chalkboard.jpg");
   background-size: cover;
   background-position: center;
@@ -637,13 +647,14 @@
 }
 
 .widget{
+  margin-block: var(--spacing-xl);
   padding: var(--spacing-xl);
   display: grid;
   grid-template-areas:
       "uptitle uptitle uptitle"
       "title title title"
       "price paragraph ..."
-      "button ... ...";
+      "button button ...";
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(4, auto);
   align-items: center;
@@ -695,6 +706,8 @@
 }
 
 .widget__details-price{
+  width: 240px;
+  text-align: center;
   font-family: var(--font-family-roboto);
   font-size: 88px;
   font-weight: 800;
@@ -749,21 +762,12 @@
   color: var(--color-text-light);
 }
 
-/* Fin: Opción Vegetariana */
+/* Fin: Vegetariana */
 
 /* Inicio: Sección Combos */
 
-.main-combos{
+.combos{
   height: 250vh;
 }
 
 /* Fin: Sección Combos */
-
-/* Inicio: */
-/* Fin: */
-
-/* Inicio: */
-/* Fin: */
-
-/* Inicio: */
-/* Fin: */
