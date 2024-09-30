@@ -326,7 +326,7 @@
 
 .hero{
   width: var(--content-width);
-  height: 100vh;
+  height: fit-content;
   background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("images/red.jpg");
   background-size: cover;
   background-position: center;
@@ -336,6 +336,7 @@
 }
 
 .hero__item{
+  margin-block: var(--spacing-xl);
   padding-top: 48px;
   height: var(--content-height);
   display: grid;
