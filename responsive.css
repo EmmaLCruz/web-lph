@@ -206,6 +206,10 @@
   }
 
   /* -- Vegetariana -- */
+  .vegetarian__item{
+    justify-content: center;
+  }
+
   .widget__subtitle {
     font-size: 50px;
   }
