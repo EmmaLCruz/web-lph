@@ -1,35 +1,50 @@
-// Función de callback que se ejecuta cuando cambian las intersecciones
-// function callback(entries, observer) {
-//   entries.forEach((entry) => {
-//     const element = entry.target.querySelector("a");
+document.addEventListener("DOMContentLoaded", () => {
+  const fatherElements = document.querySelectorAll(".animation-item");
+  // console.log(fatherElements);
 
-//     if (!entry.isIntersecting) {
-//       // Aquí puedes ejecutar acciones, como añadir clases o cargar contenido.
-//       element.classList.remove("hide");
-//       element.classList.add("unset");
-//     } else {
-//       element.classList.add("hide");
-//       setTimeout(() => {
-//         element.classList.remove("unset");
-//       }, 400);
-//     }
-//   });
-// }
+  const options = {
+    threshold: 0.4, // Cuando el 40% del elemento esté visible
+  };
 
-// // Opciones del observador
-// let options = {
-//   root: null, // El viewport (null) o un contenedor específico
-//   rootMargin: "0px", // Márgenes alrededor del root (viewport o contenedor)
-//   threshold: 0.8, // El % del elemento visible para que se active el callback
-// };
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const dataAnimation = entry.target.querySelector("div");
+      // console.log(dataAnimation);
 
-// const observer = new IntersectionObserver(callback, options);
-// // Elemento a observar
-// const animationItems = document.querySelector(".intro");
+      const dataName = dataAnimation.getAttribute("data-animation");
+      // console.log(dataName);
 
-// // Iniciar la observación
-// const oper = () => observer.observe(animationItems);
+      const addAnimation = (animationName) => {
+        if (entry.isIntersecting) {
+          dataAnimation.classList.add(`${animationName}`);
+        }
+      };
 
-// oper();
+      switch (dataName) {
+        case "fade":
+          dataAnimation.classList.toggle(`${dataName}`, !entry.isIntersecting);
+          break;
+        case "show":
+          addAnimation("show");
+          // dataAnimation.classList.toggle(`${dataName}`, entry.isIntersecting);
+          break;
+        case "slide":
+          addAnimation("slide");
+          // dataAnimation.classList.toggle(`${dataName}`, entry.isIntersecting);
+          break;
+        case "unite":
+          dataAnimation.classList.toggle(`${dataName}`, entry.isIntersecting);
+          break;
+        case "up":
+          dataAnimation.classList.toggle(`${dataName}`, entry.isIntersecting);
+          break;
+        default:
+          break;
+      }
+    });
+  }, options);
 
-// const ourProductsTexts = document.querySelector(".our-products-texts");
+  fatherElements.forEach((box) => {
+    observer.observe(box);
+  });
+});

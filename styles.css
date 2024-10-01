@@ -11,7 +11,7 @@
   /* Colores de texto */
   --color-text: #333; /* Color del texto principal */
   --color-text-light: #fff; /* Texto en fondos oscuros */
-  --color-text-secondary: #7f8c8d; /* Texto secundario, menos destacado */
+  --color-text-secondary: #b0b0b0; /* Texto secundario, menos destacado */
 
   /* Colores de fondo */
   --color-bg: #fff; /* Fondo principal */
@@ -904,8 +904,119 @@
 
 /* Fin: Sección Combos */
 
+/* Inicio: Sección Testimonios */
+
+.testimonials{
+  background-image: url("testimonials/testimonial-background.jpg");
+}
+
+.testimonials__item {
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("testimonials/testimonial-img.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.testimonials__details{
+  padding: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  overflow: hidden;
+}
+
+.testimonials__title {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--color-text-light);
+  text-align: center;
+}
+
+.carousel__body{
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel__details{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  color: var(--color-text-secondary);
+}
+
+.carousel__copy{
+  font-family: var(--font-family-lora);
+  font-size: 20px;
+  line-height: var(--line-height-base);
+}
+
+.carousel__header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: var(--spacing-xs);
+}
+
+.carousel__title,
+.carousel__subtitle{
+  font-family: var(--font-family-roboto);
+}
+
+.carousel__title{
+  font-size: 18px;
+  color: var(--color-primary);
+}
+
+.carousel__subtitle{
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--color-text-light);
+}
+
+.carousel__image{
+  margin-top: var(--spacing-md);
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.carousel__image img{
+  width: 140px;
+  border-radius: 50%;
+}
+
+.slick-dots{
+  margin-top: var(--spacing-md);
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+}
+
+.slick-dots li{
+  list-style: none;
+}
+
+.slick-active button{
+  transform: scale(1.1);
+  background-color: var(--color-primary);
+}
+
+.slick-dots li > button{
+  border-radius: 0;
+  border: none;
+  width: 10px;
+  height: 10px;
+  color: transparent;
+  cursor: pointer;
+}
 
 
+
+/* Fin: Sección Testimonios */
 
 /* Animaciones */
 

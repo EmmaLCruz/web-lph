@@ -1,8 +1,7 @@
 /* Estilos para pantallas grandes (1025px en adelante) */
 @media (max-width: 1200px) {
 
-  /* -- Navigation -- */
-
+  /* -- Navegación -- */
   .main-nav__container {
     gap: 7vw;
   }
@@ -10,6 +9,11 @@
   /* -- Productos -- */
   .products__cards {
     flex-wrap: wrap;
+  }
+
+  /* -- Testimonios -- */
+  .carousel__details{
+    width: 90%;
   }
 
   /* -- Footer -- */
@@ -44,7 +48,7 @@
 /* Estilos pantallas medianas a grandes (1024px - 1100px) */
 @media (max-width: 1100px) {
 
-  /* -- Navigation -- */
+  /* -- Navegación -- */
   .main-nav__container{
     gap: 5vw;
   }
@@ -147,7 +151,7 @@
 /* Estilos para tabletas y pantallas medianas (769px - 1024px) */
 @media (max-width: 992px) {
 
-  /* -- Navigation -- */
+  /* -- Navegación -- */
   .main-nav__container {
     width: var(--content-width);
   }
@@ -217,11 +221,12 @@
 
 /* Estilos para móviles medianos y tabletas pequeñas (481px - 768px) */
 @media (max-width: 768px) {
+  /* -- Estilos Principales -- */
   .contenedor-spaced{
     padding: 0 4vw;
   }
 
-  /* -- Navigation -- */
+  /* -- Navegación -- */
   .main-nav__logo-img {
     width: 110px;
   }
@@ -270,6 +275,19 @@
     font-size: 40px;
   }
 
+  /* -- Testimonios -- */
+  .testimonials__title {
+    font-size: 28px;
+  }
+
+  .carousel__copy{
+    font-size: 18px;
+  }
+
+  .testimonials__details{
+    padding-inline: var(--spacing-md);
+  }
+
   /* -- Footer -- */
   /* .footer {
     padding: 20px;
@@ -293,7 +311,6 @@
   }
 
   /* -- Vegetariana -- */
-
   .widget {
     padding: 46px;
   }
@@ -333,7 +350,7 @@
 /* Estilos para móviles pequeños (320px - 480px) */
 @media (max-width: 576px) {
 
-  /* -- Navigation -- */
+  /* -- Navegación -- */
   .main-nav {
     height: 5rem;
   }
@@ -352,7 +369,7 @@
   }
 
   .hero__paragraph {
-    font-size: 16px;
+    font-size: var(--font-size-base);
   }
 
   .hero__img {
@@ -361,7 +378,7 @@
 
   /* -- Vegetariana -- */
   .widget {
-    padding: 32px;
+    padding: var(--spacing-lg);
   }
 
   .widget__title {
@@ -381,7 +398,7 @@
     text-align: center;
     align-items: center;
   }
-  
+
   .combos__title{
     font-size: 26px;
   }
@@ -390,6 +407,10 @@
     font-size: 40px;
   }
 
+  /* -- Testimonios -- */
+  .carousel__details{
+    width: 100%;
+  }
   /* -- Footer -- */
   /* .footer {
     padding: 10px;
@@ -399,6 +420,7 @@
 
 /* Estilos para móviles pequeños (320px - 480px) */
 @media (max-width: 480px) {
+
   /* -- Vegetariana -- */
   .widget__title::after {
     left: 9rem;
