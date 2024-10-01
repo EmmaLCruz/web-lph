@@ -25,6 +25,20 @@
   .products__cards {
     justify-content: center;
   }
+
+  /* -- Combos -- */
+  .flier__title{
+    font-size: 48px;
+  }
+
+  .flier__paragraph{
+    font-size: 18px;
+    line-height: var(--line-height-base);
+  }
+
+  .flier__price{
+    font-size: 56px;
+  }
 }
 
 /* Estilos pantallas medianas a grandes (1024px - 1100px) */
@@ -106,6 +120,23 @@
     width: 270px;
   }
 
+  /* -- Combos -- */
+  .combos__title{
+    font-size: 48px;
+  }
+
+  .flier__title{
+    font-size: 44px;
+  }
+
+  .flier__paragraph{
+    line-height: 1.4;
+  }
+
+  .flier__price{
+    font-size: 52px;
+  }
+
   /* -- Footer -- */
   /* .footer {
     padding: 30px;
@@ -164,6 +195,19 @@
     width: 260px;
   }
 
+  /* -- Combos -- */
+  .combos__title{
+    font-size: 44px;
+  }
+
+  .flier__title{
+    font-size: 40px;
+  }
+
+  .flier__price{
+    font-size: 48px;
+  }
+
   /* -- Footer -- */
   /* .footer {
     padding: 30px;
@@ -173,6 +217,9 @@
 
 /* Estilos para móviles medianos y tabletas pequeñas (481px - 768px) */
 @media (max-width: 768px) {
+  .contenedor-spaced{
+    padding: 0 4vw;
+  }
 
   /* -- Navigation -- */
   .main-nav__logo-img {
@@ -216,6 +263,11 @@
 
   .widget__image img{
     width: 200px;
+  }
+
+  /* -- Combos -- */
+  .combos__title{
+    font-size: 40px;
   }
 
   /* -- Footer -- */
@@ -267,6 +319,15 @@
     font-size: 14px;
   }
 
+  /* -- Combos -- */
+  .combos__title{
+    font-size: 36px;
+  }
+
+  .combos__title--red{
+    display: block;
+  }
+
 }
 
 /* Estilos para móviles pequeños (320px - 480px) */
@@ -313,6 +374,20 @@
 
   .widget__image img {
     width: 140px;
+  }
+
+  /* -- Combos -- */
+  .flier__details{
+    text-align: center;
+    align-items: center;
+  }
+  
+  .combos__title{
+    font-size: 26px;
+  }
+
+  .flier__price{
+    font-size: 40px;
   }
 
   /* -- Footer -- */

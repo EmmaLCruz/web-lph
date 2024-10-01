@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       const dataAnimation = entry.target.querySelector("div");
+      // console.log(dataAnimation);
+
       const dataName = dataAnimation.getAttribute("data-animation");
       // console.log(dataName);
 

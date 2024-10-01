@@ -271,6 +271,18 @@
   width: max-content;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.main-nav__order-box::after {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: .75px;
+  height: 72px;
+  background-color: var(--color-secondary);
 }
 
 .main-nav__order-box-text{
@@ -444,11 +456,6 @@
   transform: scale(0);
   padding: 56px 0 48px 0;
   transition: opacity .6s var(--transition-easing), transform .6s var(--transition-easing);
-}
-
-.show{
-  opacity: 1;
-  transform: scale(1);
 }
 
 .products__title {
@@ -768,7 +775,141 @@
 /* Inicio: Sección Combos */
 
 .combos{
-  height: 250vh;
+  height: fit-content;
+  background-color: var(--color-bg-secondary);
+  padding-bottom: var(--spacing-xl);
+  user-select: none;
+}
+
+.combos__details{
+  text-align: center;
+  padding: 56px 0 48px 0;
+}
+
+.combos__title{
+  font-size: 52px;
+  font-weight: 500;
+  position: relative;
+}
+
+.combos__title--red{
+  color: var(--color-primary);
+  font-weight: 700;
+  transition: color var(--transition-duration) var(--transition-easing);
+}
+
+.combos__title:hover .combos__title--red {
+  color: #000;
+  transition: color var(--transition-duration) var(--transition-easing);
+}
+
+.combos__title::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6rem;
+  height: 4px;
+  background-color: var(--color-primary);
+}
+
+.combos__cards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  color: var(--color-text-light);
+}
+
+.flier{
+  max-width: 44vw;
+  min-width: 400px;
+  max-height: 550px;
+  min-height: 520px;
+  height: fit-content;
+  background-color: rgb(46, 46, 46);
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.flier__image{
+  background-color: #000;
+  position: absolute;
+  height: var(--content-height);
+  width: var(--content-width);
+  display: flex;
+  justify-content: center;
+}
+
+.flier__image img{
+  opacity: .5;
+  width: var(--content-width);
+  object-fit: cover;
+}
+
+.flier__side-board{
+  position: absolute;
+  text-align: center;
+  background-color: red;
+  padding-inline: 4rem;
+  padding-top: 2rem;
+  right: -4.5rem;
+  top: -14px;
+  transform: rotate(45deg);
+  z-index: 2;
+}
+
+.flier__details{
+  padding: 48px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity var(--transition-duration) var(--transition-easing);
+}
+
+.btn--yellow{
+  color: var(--color-bg-tertiary);
+  background-color: var(--color-secondary);
+}
+
+.btn--yellow:hover{
+  color: var(--color-text-light);
+  background-color: var(--color-primary);
+}
+
+.flier__title{
+  font-size: 56px;
+  font-weight: 700;
+  line-height: var(--line-height-heading);
+}
+
+.flier__paragraph{
+  font-size: 18px;
+}
+
+.flier__price{
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.flier__subtitle{
+  font-size: 28px;
+  font-weight: 600;
 }
 
 /* Fin: Sección Combos */
+
+
+
+
+/* Animaciones */
+
+.show {
+  opacity: 1;
+  transform: scale(1);
+}
