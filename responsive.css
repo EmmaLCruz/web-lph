@@ -234,6 +234,7 @@
 
   /* -- Hero -- */
   .hero__item {
+    margin-block: 0;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: var(--spacing-lg);
@@ -282,6 +283,7 @@
   }
 
   .testimonials__details{
+    width: 94%;
     padding-inline: var(--spacing-md);
   }
 

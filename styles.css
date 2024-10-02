@@ -106,7 +106,7 @@
   right: 20px;
   opacity: 0;
   transition: transform var(--transition-duration) var(--transition-easing), opacity var(--transition-duration) var(--transition-easing);
-  z-index: 100;
+  z-index: 500;
 }
 
 .up-btn a{
@@ -169,10 +169,6 @@
   width: 150px;
   z-index: 10;
 }
-
-/* .main-nav__logo-fill{
-  width: 8vw;
-} */
 
 .main-nav__logo-img{
   position: absolute;
@@ -319,7 +315,7 @@
   height: 30px;
   background-repeat: repeat-x;
   animation: wave-movement 20s linear infinite;
-  z-index: 1;
+  z-index: 5;
 }
 
 @keyframes wave-movement {
@@ -1025,9 +1021,10 @@
   cursor: pointer;
 }
 
-
-
 /* Fin: Sección Testimonios */
+
+/* Inicio: Sección Delivery */
+/* Fin: Sección Delivery */
 
 /* Animaciones */
 
