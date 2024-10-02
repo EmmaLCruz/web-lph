@@ -173,8 +173,9 @@
   }
 
   /* -- Wave -- */
-  .wave {
-    display: none;
+  .wave{
+    /* opacity: 0; */
+    background-image: none;
   }
 
   /* -- Hero -- */
@@ -252,10 +253,10 @@
   }
 
   /* -- Productos -- */
-  .products__details {
+  /* .products__details {
     opacity: 1;
     transform: scale(1);
-  }
+  } */
 
   /* -- Vegetariana -- */
   .vegetarian__item{
@@ -280,12 +281,16 @@
     font-size: 28px;
   }
 
+  .testimonials__details{
+    padding-inline: var(--spacing-md);
+  }
+
   .carousel__copy{
     font-size: 18px;
   }
 
-  .testimonials__details{
-    padding-inline: var(--spacing-md);
+  .carousel__image img{
+    width: 100px;
   }
 
   /* -- Footer -- */
@@ -411,6 +416,11 @@
   .carousel__details{
     width: 100%;
   }
+
+  .slick-dots{
+    margin-top: var(--spacing-sm);
+  }
+
   /* -- Footer -- */
   /* .footer {
     padding: 10px;
