@@ -283,7 +283,7 @@
   }
 
   .testimonials__details{
-    width: 94%;
+    width: 100%;
     padding-inline: var(--spacing-md);
   }
 
@@ -356,23 +356,28 @@
 
 /* Estilos para móviles pequeños (320px - 480px) */
 @media (max-width: 576px) {
+  /* -- Contenedores -- */
+  .contenedor-spaced{
+    padding: 0 1vw;
+  }
 
   /* -- Navegación -- */
   .main-nav {
-    height: 5rem;
+    height: 3rem;
   }
 
   .main-nav__logo-img {
-    width: 100px;
+    width: 80px;
   }
 
   /* -- Hero -- */
   .hero__item {
+    padding-top: 28px;
     row-gap: var(--spacing-md);
   }
 
   .hero__subtitle {
-    font-size: 56px;
+    font-size: 36px;
   }
 
   .hero__paragraph {
@@ -380,11 +385,27 @@
   }
 
   .hero__img {
-    width: 280px;
+    width: 240px;
+  }
+
+  /* -- Botones -- */
+
+  .btn{
+    height: 38px;
+    width: 140px;
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .btn__add-to-cart{
+    width: var(--content-width);
+    height: 38px;
   }
 
   /* -- Vegetariana -- */
   .widget {
+    margin-block: var(--spacing-lg);
+    width: 100%;
     padding: var(--spacing-lg);
   }
 
