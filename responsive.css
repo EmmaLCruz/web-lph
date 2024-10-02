@@ -234,7 +234,7 @@
 
   /* -- Hero -- */
   .hero__item {
-    margin-block: 0;
+    margin-block: 24px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: var(--spacing-lg);
@@ -391,7 +391,7 @@
   /* -- Botones -- */
 
   .btn{
-    height: 38px;
+    height: 40px;
     width: 140px;
     font-size: 12px;
     letter-spacing: 2px;
@@ -399,7 +399,7 @@
 
   .btn__add-to-cart{
     width: var(--content-width);
-    height: 38px;
+    height: 40px;
   }
 
   /* -- Vegetariana -- */

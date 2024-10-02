@@ -198,7 +198,7 @@
 }
 
 .main-nav__sub-menu {
-  z-index: 5;
+  z-index: 6;
   position: absolute;
   top: 103px;
   height: auto;
