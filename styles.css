@@ -1027,41 +1027,66 @@
 /* Inicio: Sección Delivery */
 
 .delivery{
-  background-image: none;
+  height: fit-content;
   background-color: var(--color-primary);
   position: relative;
 }
 
 .delivery__item{
+  padding-block: 80px;
+  display: grid;
   width: 96%;
   grid-template-columns: 1fr 1fr;
+  overflow: hidden;
 }
 
-.delivery__img--png{
-  width: 500px;
+.delivery__img--moto{
+  margin: auto 0;
 }
 
-.delivery__img{
+.delivery__img--moto img{
+  width: 40vw;
+  opacity: 0.9;
+}
+
+.delivery__img--hand-cellphone{
   position: absolute;
   right: 0;
-  bottom: -5px;
-  z-index: -1;
+  bottom: -6px;
+  overflow: hidden;
 }
 
-.delivery__img img{
+.delivery__img--hand-cellphone img{
   opacity: .9;
   width: 360px;
 }
 
-.delivery__text{
+.delivery__details{
+  max-height: 500px;
+  min-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
   background-color: rgba(109, 2, 0, 0.8);
-  padding: var(--spacing-xl);
+  padding: 56px var(--spacing-xl);
+  z-index: 1;
+}
+
+.delivery__details > .btn{
+  height: 48px;
+  width: 200px;
+  color: var(--color-text);
+}
+
+.delivery__details > .btn:hover{
+  color: var(--color-text-light);
 }
 
 .delivery__title{
   font-size: 20px;
   font-weight: 600;
   color: var(--color-text-yellow);
+  margin-bottom: -20px;
 }
 
 .delivery__subtitle{
@@ -1074,13 +1099,13 @@
 .delivery__paragraph{
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
-  font-size: 18px;
-  color: var(--color-text-light);
+  gap: var(--spacing-lg);
 }
 
-.delivery__paragraph > p{
+.delivery__paragraph--text{
   font-family: var(--font-family-roboto);
+  font-size: 18px;
+  color: var(--color-text-light);
 }
 
 /* Fin: Sección Delivery */

@@ -213,6 +213,11 @@
     font-size: 48px;
   }
 
+  /* -- Delivery -- */
+  .delivery__subtitle{
+    font-size: 48px;
+  }
+
   /* -- Footer -- */
   /* .footer {
     padding: 30px;
@@ -293,6 +298,31 @@
 
   .carousel__image img{
     width: 100px;
+  }
+
+  /* -- Delivery -- */
+  .delivery__item{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .delivery__img--moto{
+    margin: 0 auto;
+  }
+
+  .delivery__img--moto img{
+    width: 80vw;
+  }
+
+  .delivery__img--hand-cellphone img{
+    width: 180px;
+  }
+
+  .delivery__details{
+    max-height: fit-content;
+    min-width: 90vw;
+    align-items: center;
+    text-align: center;
   }
 
   /* -- Footer -- */
@@ -446,6 +476,15 @@
 
   .slick-dots{
     margin-top: var(--spacing-sm);
+  }
+
+  /* -- Delivery -- */
+  .delivery__title{
+    font-size: var(--font-size-base);
+  }
+
+  .delivery__subtitle{
+    font-size: 32px;
   }
 
   /* -- Footer -- */
