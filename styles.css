@@ -10,6 +10,7 @@
 
   /* Colores de texto */
   --color-text: #333; /* Color del texto principal */
+  --color-text-yellow: #fcc462; /* Color del texto amarillo */
   --color-text-light: #fff; /* Texto en fondos oscuros */
   --color-text-secondary: #b0b0b0; /* Texto secundario, menos destacado */
 
@@ -284,7 +285,7 @@
 .main-nav__order-box-text{
   font-size: var(--font-size-base);
   font-weight: 600;
-  color: #fcc462;
+  color: var(--color-text-yellow);
   user-select: none;
 }
 
@@ -489,8 +490,8 @@
 }
 
 .card{
-  min-width: 260px;
-  max-width: 320px;
+  min-width: 230px;
+  max-width: 230px;
   background-color: var(--color-bg);
   border-radius: var(--border-radius);
   padding: var(--spacing-md);
@@ -1024,6 +1025,64 @@
 /* Fin: Sección Testimonios */
 
 /* Inicio: Sección Delivery */
+
+.delivery{
+  background-image: none;
+  background-color: var(--color-primary);
+  position: relative;
+}
+
+.delivery__item{
+  width: 96%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.delivery__img--png{
+  width: 500px;
+}
+
+.delivery__img{
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  z-index: -1;
+}
+
+.delivery__img img{
+  opacity: .9;
+  width: 360px;
+}
+
+.delivery__text{
+  background-color: rgba(109, 2, 0, 0.8);
+  padding: var(--spacing-xl);
+}
+
+.delivery__title{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text-yellow);
+}
+
+.delivery__subtitle{
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--color-text-light);
+  line-height: var(--line-height-heading);
+}
+
+.delivery__paragraph{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  font-size: 18px;
+  color: var(--color-text-light);
+}
+
+.delivery__paragraph > p{
+  font-family: var(--font-family-roboto);
+}
+
 /* Fin: Sección Delivery */
 
 /* Animaciones */
