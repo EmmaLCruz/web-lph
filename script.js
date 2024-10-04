@@ -32,10 +32,10 @@ document.addEventListener("DOMContentLoaded", () => {
           break;
         case "unite":
           addAnimation("unite");
-          // dataAnimation.classList.toggle(`${dataName}`, entry.isIntersecting);
           break;
         case "up":
-          dataAnimation.classList.toggle(`${dataName}`, entry.isIntersecting);
+          addAnimation("up");
+          // dataAnimation.classList.toggle(`${dataName}`, entry.isIntersecting);
           break;
         default:
           break;

@@ -16,6 +16,11 @@
     width: 90%;
   }
 
+  /* -- Newsletter -- */
+  .form__title{
+    font-size: 32px;
+  }
+
   /* -- Footer -- */
   /* .footer {
     padding: 40px;
@@ -324,6 +329,29 @@
     text-align: center;
   }
 
+  /* -- Newsletter -- */
+  .newsletter__form{
+    flex-direction: column;
+  }
+
+  .form__title{
+    text-align: center;
+  }
+
+  .form__paragraph{
+    text-align: center;
+  }
+
+  .form__body {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    width: 100%;
+  }
+
+  .form__input{
+    width: 100%;
+  }
+
   /* -- Footer -- */
   /* .footer {
     padding: 20px;
@@ -485,6 +513,11 @@
     font-size: 32px;
   }
 
+  /* -- Newsletter -- */
+  .form__title{
+    font-size: 28px;
+  }
+  
   /* -- Footer -- */
   /* .footer {
     padding: 10px;
