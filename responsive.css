@@ -174,7 +174,6 @@
 
   /* -- Wave -- */
   .wave{
-    /* opacity: 0; */
     background-image: none;
   }
 
@@ -419,7 +418,6 @@
   }
 
   /* -- Botones -- */
-
   .btn{
     height: 40px;
     width: 140px;

@@ -1035,30 +1035,20 @@
 .delivery__item{
   padding-block: 80px;
   display: grid;
-  width: 96%;
+  /* width: 96%; */
   grid-template-columns: 1fr 1fr;
+  column-gap: 400px;
+  transition: gap var(--transition-duration) var(--transition-easing);
   overflow: hidden;
 }
 
 .delivery__img--moto{
-  margin: auto 0;
+  margin-block: auto;
 }
 
 .delivery__img--moto img{
-  width: 40vw;
+  width: 500px;
   opacity: 0.9;
-}
-
-.delivery__img--hand-cellphone{
-  position: absolute;
-  right: 0;
-  bottom: -6px;
-  overflow: hidden;
-}
-
-.delivery__img--hand-cellphone img{
-  opacity: .9;
-  width: 360px;
 }
 
 .delivery__details{
@@ -1108,7 +1098,28 @@
   color: var(--color-text-light);
 }
 
+.delivery__img--hand-cellphone {
+  position: absolute;
+  right: 0;
+  bottom: -6px;
+}
+
+.delivery__img--hand-cellphone img {
+  opacity: .9;
+  width: 360px;
+}
+
 /* Fin: Sección Delivery */
+
+/* Inicio: Sección Newsletter */
+
+/* .newsletter{
+  background-color: #000;
+  height: 100vh;
+} */
+
+/* Fin: Sección Newsletter */
+
 
 /* Animaciones */
 
@@ -1116,3 +1127,7 @@
   opacity: 1;
   transform: scale(1);
 }
+
+/* .unite{
+  gap: 0;
+} */

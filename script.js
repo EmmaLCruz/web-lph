@@ -26,14 +26,13 @@ document.addEventListener("DOMContentLoaded", () => {
           break;
         case "show":
           addAnimation("show");
-          // dataAnimation.classList.toggle(`${dataName}`, entry.isIntersecting);
           break;
         case "slide":
           addAnimation("slide");
-          // dataAnimation.classList.toggle(`${dataName}`, entry.isIntersecting);
           break;
         case "unite":
-          dataAnimation.classList.toggle(`${dataName}`, entry.isIntersecting);
+          addAnimation("unite");
+          // dataAnimation.classList.toggle(`${dataName}`, entry.isIntersecting);
           break;
         case "up":
           dataAnimation.classList.toggle(`${dataName}`, entry.isIntersecting);
