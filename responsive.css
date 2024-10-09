@@ -228,6 +228,39 @@
 
 }
 
+@media (max-width: 820px) {
+  /* -- Footer -- */
+  .footer__content{
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .footer__contact-info,
+  .footer__opening-hour{
+    max-width: 70%;
+    margin-top: 0;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .footer__days li{
+    gap: 56px;
+  }
+
+  .footer__days span{
+    margin-left: 0;
+  }
+
+  .footer__title::after{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer__background-image img{
+    opacity: .1;
+  }
+}
+
 /* Estilos para móviles medianos y tabletas pequeñas (481px - 768px) */
 @media (max-width: 768px) {
   /* -- Estilos Principales -- */
@@ -530,10 +563,9 @@
   }
 
   /* -- Footer -- */
-  /* .footer {
-    padding: 10px;
-  } */
-
+  .footer__background-image{
+    display: none;
+  }
 }
 
 /* Estilos para móviles pequeños (320px - 480px) */
@@ -570,8 +602,8 @@
   }
 
   /* -- Footer -- */
-  /* .footer {
-    padding: 10px;
-  } */
-
+  .footer__contact-info,
+  .footer__opening-hour{
+    max-width: 90%;
+  }
 }

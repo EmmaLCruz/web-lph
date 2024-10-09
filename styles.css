@@ -1286,6 +1286,133 @@
 /* Fin: Sección Galería de Imágenes */
 
 /* Inicio: Footer */
+
+.page__footer{
+  background-color: #0f1924;
+  color: var(--color-text-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.footer__background-image{
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.footer__background-image img{
+  height: 100%;
+  opacity: .2;
+}
+
+.footer__item{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-lg) 0;
+}
+
+.footer__content{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-lg) 0;
+  border-bottom: 1px solid rgba(118, 118, 118, .4);
+  z-index: 3;
+}
+
+.footer__contact-info,
+.footer__opening-hour{
+  margin-top: 48px;
+}
+
+.footer__title{
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.footer__title::after{
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  width: 3rem;
+  height: 2px;
+  background-color: var(--color-primary);
+}
+
+.footer__details{
+  text-align: center;
+}
+
+.footer__data{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__days li{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__days span{
+  text-align: left;
+  margin-left: 16px;
+}
+
+.footer__item a{
+  color: var(--color-text-light);
+  text-decoration: none;
+}
+
+.footer__item li,
+.footer__item li a{
+  list-style: none;
+  font-size: 16px;
+  color: #a8a8a8;
+  line-height: 2;
+  font-family: var(--font-family-roboto);
+}
+
+.footer__item li a:hover{
+  color: var(--color-text-light);
+}
+
+.footer__phone-number.text-white{
+  color: #e6e6e6;
+  font-weight: 700;
+}
+
+.footer__phone-number.text-white:hover {
+  color: var(--color-text-light);
+}
+
+.footer__paragraph{
+  text-align: center;
+  margin-top: 32px;
+}
+
+.footer__paragraph,
+.footer__paragraph a{
+  font-family: var(--font-family-roboto);
+  font-size: 15px;
+  color: #767676;
+  z-index: 3;
+  transition: color var(--transition-duration) var(--transition-easing);
+}
+
+.footer__paragraph a:hover{
+  color: var(--color-text-light);
+}
+
 /* Fin: Footer */
 
 /* Animaciones */
