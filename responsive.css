@@ -277,7 +277,6 @@
   .widget {
     width: 100%;
     padding: 46px;
-    /* row-gap: var(--spacing-lg); */
   }
 
   .widget__image img{
@@ -295,8 +294,8 @@
   }
 
   .testimonials__details{
-    width: 100%;
-    padding-inline: var(--spacing-md);
+    width: 96%;
+    padding-inline: var(--spacing-lg);
   }
 
   .carousel__copy{
@@ -473,7 +472,6 @@
   .widget {
     margin-block: var(--spacing-lg);
     width: 96%;
-    padding: var(--spacing-lg);
     row-gap: .75rem;
   }
 
@@ -544,7 +542,7 @@
   }
 
   .widget__subtitle {
-    font-size: 34px;
+    font-size: 32px;
     margin-bottom: 16px;
   }
 
@@ -558,6 +556,29 @@
     height: 38px;
     width: 152px;
     letter-spacing: 1px;
+  }
+
+  /* -- Combos -- */
+  .flier{
+    min-width: 380px;
+  }
+
+  .flier__details{
+    padding-inline: 36px;
+  }
+
+  /* -- Testimonios -- */
+  .testimonials__details,
+  .carousel__details{
+    gap: 40px;
+  }
+
+  .carousel__title{
+    font-size: 22px;
+  }
+
+  .carousel__image{
+    margin-top: 22px;
   }
 
   /* -- Footer -- */
