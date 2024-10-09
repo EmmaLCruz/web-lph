@@ -269,19 +269,15 @@
     width: 300px;
   }
 
-  /* -- Productos -- */
-  /* .products__details {
-    opacity: 1;
-    transform: scale(1);
-  } */
-
   /* -- Vegetariana -- */
   .vegetarian__item{
     justify-content: center;
   }
 
-  .widget__subtitle {
-    font-size: 50px;
+  .widget {
+    width: 100%;
+    padding: 46px;
+    /* row-gap: var(--spacing-lg); */
   }
 
   .widget__image img{
@@ -364,6 +360,8 @@
   /* -- Productos -- */
   .products__details {
     padding: 40px 0 24px 0;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .products__title {
@@ -375,12 +373,21 @@
   }
 
   /* -- Vegetariana -- */
-  .widget {
-    padding: 46px;
+  .widget{
+    grid-template-areas:
+        "uptitle uptitle"
+        "title title"
+        "price paragraph"
+        "button ...";
+    grid-template-columns: repeat(2, auto);
+    padding-inline: 24px;
+  }
+  .widget__btn{
+    margin: 48px 0 8px;
   }
 
   .widget__subtitle {
-    font-size: 42px;
+    font-size: 52px;
   }
 
   .widget__image img {
@@ -422,7 +429,7 @@
   }
 
   .main-nav__logo-img {
-    width: 80px;
+    width: 90px;
   }
 
   /* -- Hero -- */
@@ -437,6 +444,7 @@
 
   .hero__paragraph {
     font-size: var(--font-size-base);
+    line-height: var(--line-height-heading);
   }
 
   .hero__img {
@@ -447,11 +455,12 @@
   .card{
     min-width: 72%;
   }
+
   /* -- Botones -- */
   .btn{
-    height: 40px;
-    width: 140px;
-    font-size: 12px;
+    height: 48px;
+    width: 180px;
+    font-size: 14px;
     letter-spacing: 2px;
   }
 
@@ -463,20 +472,17 @@
   /* -- Vegetariana -- */
   .widget {
     margin-block: var(--spacing-lg);
-    width: 100%;
+    width: 96%;
     padding: var(--spacing-lg);
-  }
-
-  .widget__title {
-    font-size: 18px;
+    row-gap: .75rem;
   }
 
   .widget__subtitle {
-    font-size: 38px;
+    font-size: 46px;
   }
 
-  .widget__image img {
-    width: 140px;
+  .widget__copy{
+    margin-left: 16px;
   }
 
   /* -- Combos -- */
@@ -538,28 +544,20 @@
   }
 
   .widget__subtitle {
-    font-size: 26px;
+    font-size: 34px;
+    margin-bottom: 16px;
   }
 
   .widget__details-price {
     width: 100px;
-    font-size: 44px;
     margin-bottom: 0;
-  }
-
-  .widget__details-data {
-    font-size: 12px;
   }
 
   .btn--red{
     font-size: 12px;
     height: 38px;
-    width: 120px;
+    width: 152px;
     letter-spacing: 1px;
-  }
-
-  .widget__image img {
-    width: 110px;
   }
 
   /* -- Footer -- */
