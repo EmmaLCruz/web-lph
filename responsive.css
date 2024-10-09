@@ -567,4 +567,8 @@
   .footer__opening-hour{
     max-width: 90%;
   }
+
+  .footer__paragraph{
+    width: 72%;
+  }
 }
