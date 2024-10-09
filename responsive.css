@@ -1,6 +1,4 @@
-/* Estilos para pantallas grandes (1025px en adelante) */
 @media (max-width: 1200px) {
-
   /* -- Navegación -- */
   .main-nav__container {
     gap: 7vw;
@@ -15,16 +13,9 @@
   .form__title{
     font-size: 32px;
   }
-
-  /* -- Footer -- */
-  /* .footer {
-    padding: 40px;
-  } */
-
 }
 
 @media (max-width: 1172px) {
-
   /* -- Productos -- */
   /* .products__cards {
     justify-content: center;
@@ -45,9 +36,7 @@
   }
 }
 
-/* Estilos pantallas medianas a grandes (1024px - 1100px) */
 @media (max-width: 1100px) {
-
   /* -- Navegación -- */
   .main-nav__container{
     gap: 5vw;
@@ -140,17 +129,9 @@
   .flier__price{
     font-size: 52px;
   }
-
-  /* -- Footer -- */
-  /* .footer {
-    padding: 30px;
-  } */
-
 }
 
-/* Estilos para tabletas y pantallas medianas (769px - 1024px) */
 @media (max-width: 992px) {
-
   /* -- Navegación -- */
   .main-nav__container {
     width: var(--content-width);
@@ -186,6 +167,7 @@
   .products__cards{
     justify-content: center;
   }
+
   /* -- Vegetariana -- */
   .widget__title {
     font-size: 20px;
@@ -220,15 +202,9 @@
   .delivery__subtitle{
     font-size: 48px;
   }
-
-  /* -- Footer -- */
-  /* .footer {
-    padding: 30px;
-  } */
-
 }
 
-@media (max-width: 820px) {
+@media (max-width: 920px) {
   /* -- Footer -- */
   .footer__content{
     flex-direction: column;
@@ -261,7 +237,6 @@
   }
 }
 
-/* Estilos para móviles medianos y tabletas pequeñas (481px - 768px) */
 @media (max-width: 768px) {
   /* -- Estilos Principales -- */
   .contenedor-spaced{
@@ -298,10 +273,6 @@
   /* .products__details {
     opacity: 1;
     transform: scale(1);
-  } */
-
-  /* .card{
-    flex-basis: calc(50% - 10px);
   } */
 
   /* -- Vegetariana -- */
@@ -387,16 +358,9 @@
   .form__input{
     width: 100%;
   }
-
-  /* -- Footer -- */
-  /* .footer {
-    padding: 20px;
-  } */
-
 }
 
 @media (max-width: 682px) {
-
   /* -- Productos -- */
   .products__details {
     padding: 40px 0 24px 0;
@@ -444,10 +408,8 @@
   .combos__title--red{
     display: block;
   }
-
 }
 
-/* Estilos para móviles pequeños (320px - 480px) */
 @media (max-width: 576px) {
   /* -- Contenedores -- */
   .contenedor-spaced{
@@ -568,7 +530,6 @@
   }
 }
 
-/* Estilos para móviles pequeños (320px - 480px) */
 @media (max-width: 480px) {
 
   /* -- Vegetariana -- */
