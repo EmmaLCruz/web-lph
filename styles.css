@@ -1119,7 +1119,9 @@
 .drawn-card__title{
   font-size: 18px;
   width: 70%;
+  min-height: 56px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .drawn-card__paragraph{

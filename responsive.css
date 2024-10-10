@@ -583,7 +583,21 @@
   }
 
   .drawn-card{
-    max-width: 360px;
+    align-items: center;
+  }
+  
+  .drawn-card,
+  .newsletter__form{
+    max-width: 368px;
+    margin: 0 auto;
+  }
+
+  .drawn-card__title{
+    min-height: fit-content;
+  }
+
+  .drawn-card__paragraph{
+    width: 76%;
   }
 
   /* -- Footer -- */
