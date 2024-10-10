@@ -577,6 +577,15 @@
     margin-top: 22px;
   }
 
+  /* -- Newsletter -- */
+  .newsletter__cards--content{
+    justify-content: center;
+  }
+
+  .drawn-card{
+    max-width: 360px;
+  }
+
   /* -- Footer -- */
   .footer__contact-info,
   .footer__opening-hour{

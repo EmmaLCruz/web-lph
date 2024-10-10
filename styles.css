@@ -1090,9 +1090,11 @@
   display: flex;
   gap: var(--spacing-md);
   flex-wrap: wrap;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity .9s var(--transition-easing), transform .9s var(--transition-easing);
+}
+
+.newsletter__cards--content{
+  display: flex;
+  flex: 1;
 }
 
 .drawn-card{
@@ -1100,12 +1102,14 @@
   flex-direction: column;
   min-width: 230px;
   gap: var(--spacing-md);
-  flex: 1;
   padding: 40px var(--spacing-md);
   text-align: center;
   background-color: var(--color-bg);
   border: 1px dashed #8f8f8f;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity .9s var(--transition-easing), transform .9s var(--transition-easing);
 }
 
 .drawn-card__image img{
