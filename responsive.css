@@ -563,10 +563,6 @@
     min-width: 380px;
   }
 
-  .flier__details{
-    padding-inline: 36px;
-  }
-
   /* -- Testimonios -- */
   .testimonials__details,
   .carousel__details{
