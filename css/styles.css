@@ -8,32 +8,32 @@
   --color-secondary: #fbaf2b;
 
   /* Colores de texto */
-  --color-text: #333; /* Color del texto principal */
-  --color-text-yellow: #fcc462; /* Color del texto amarillo */
-  --color-text-light: #fff; /* Texto en fondos oscuros */
-  --color-text-secondary: #b0b0b0; /* Texto secundario, menos destacado */
+  --color-text: #333;
+  --color-text-yellow: #fcc462;
+  --color-text-light: #fff;
+  --color-text-secondary: #b0b0b0;
 
   /* Colores de fondo */
-  --color-bg: #fff; /* Fondo principal */
-  --color-bg-secondary: #ffeec6; /* Fondo secundario */
-  --color-bg-tertiary: #f7f7f7; /* Fondo alternativo para secciones */
-  --color-bg-dark: #2c3e50; /* Fondo oscuro para cabeceras o pies de página */
+  --color-bg: #fff;
+  --color-bg-secondary: #ffeec6;
+  --color-bg-tertiary: #f7f7f7;
+  --color-bg-dark: #2c3e50;
 
   /* Colores de borde */
   --color-border: #e0e0e0;
 
   /* Tipografía */
-  --font-family-poppins: 'Poppins', sans-serif; /* Fuente principal */
+  --font-family-poppins: 'Poppins', sans-serif;
   --font-family-roboto: 'Roboto', sans-serif;
   --font-family-lora: 'Lora', sans-serif;
   --font-family-playfair: 'Playfair Display', sans-serif;
 
   /* Tamaños de la tipografía */
-  --font-size-base: 16px; /* Tamaño base del texto */
-  --font-size-h1: 2.5rem; /* Tamaño para <h1> */
-  --font-size-h2: 2rem; /* Tamaño para <h2> */
-  --font-size-h3: 1.75rem; /* Tamaño para <h3> */
-  --font-size-p: 1rem; /* Tamaño para párrafos */
+  --font-size-base: 16px;
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.75rem;
+  --font-size-p: 1rem;
 
   /* Espaciado entre líneas */
   --line-height-base: 1.6;
@@ -47,20 +47,18 @@
   --spacing-xl: 64px;
 
   /* Anchos */
-  --container-width: 1200px; /* Ancho máximo del contenedor principal */
-  --content-width: 100%; /* Para contenido fluido */
+  --container-width: 1200px;
+  --content-width: 100%;
 
   /* Altura de cabeceras, pies de página, etc. */
   --content-height: 100%;
-  --header-height: 80px;
-  --footer-height: 100px;
 
   /* Sombras */
   --box-shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
   --box-shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.15);
 
   /* Bordes */
-  --border-radius: 8px; /* Bordes redondeados */
+  --border-radius: 8px;
   --border-width: 1px;
 
   /* Transiciones */
@@ -70,12 +68,6 @@
   /* Animaciones */
   --animation-duration: 0.5s;
   --animation-easing: ease;
-
-  /* Breakpoints */
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
 }
 
 * {
@@ -294,7 +286,7 @@
   overflow: hidden;
   position: absolute;
   width: var(--content-width);
-  background-image: url("images/wave.png");
+  background-image: url("/img/backgrounds/wave.png");
   height: 30px;
   background-repeat: repeat-x;
   animation: wave-movement 20s linear infinite;
@@ -318,7 +310,7 @@
 .hero{
   width: var(--content-width);
   height: fit-content;
-  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("images/red-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("/img/backgrounds/red-background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -399,7 +391,7 @@
 .products{
   content-visibility: auto;
   height: fit-content;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .1)), url("images/yellow.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .1)), url("/img/backgrounds/yellow.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -430,11 +422,6 @@
   font-size: 20px;
   color: var(--color-text-light);
 }
-
-.products__details.visible {
-  animation: fadeIn 1s forwards;
-}
-
 
 .products__cards{
   display: flex;
@@ -591,7 +578,7 @@
   content-visibility: auto;
   width: var(--content-width);
   height: fit-content;
-  background-image: url("images/hand-drawn-chalkboard.jpg");
+  background-image: url("/img/backgrounds/hand-drawn-chalkboard.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -626,11 +613,6 @@
   opacity: 0;
   transform: translateX(180%);
   transition: transform 1s var(--transition-easing), opacity var(--transition-duration) var(--transition-easing);
-}
-
-.slide{
-  opacity: 1;
-  transform: translateX(0);
 }
 
 .widget__title{
@@ -861,13 +843,13 @@
 
 .testimonials{
   content-visibility: auto;
-  background-image: url("testimonials/testimonial-background.jpg");
+  background-image: url("/img/testimonials/testimonial-background.jpg");
   display: flex;
 }
 
 .testimonials__item {
   flex: 1;
-  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("testimonials/testimonial-img.png");
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("/img/testimonials/testimonial-img.png");
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
@@ -1251,7 +1233,7 @@
 }
 
 .gallery__image--img {
-  width: 100%;
+  width: 256px;
   transition: transform 1s ease-in-out;
 }
 
@@ -1425,18 +1407,6 @@
   }
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
 .fade {
   opacity: 1;
   transform: translateY(-10px);
@@ -1445,6 +1415,11 @@
 .show {
   opacity: 1;
   transform: scale(1);
+}
+
+.slide {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .up{
